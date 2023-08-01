@@ -72,13 +72,14 @@
  }
 
  .second-section p {
-     color: var(--Grayish-Blue);
+     color: var(--Pale-Blue);
      font-weight: 400;
      margin-bottom: 20px;
  }
 
  .second-section p span {
      color: var(--Pale-Blue);
+     font-weight: 700
  }
 
 
@@ -159,4 +160,31 @@
      position: absolute;
      bottom: -28px;
      right: 0px;
+ }
+
+ @media screen and (max-width: 1095px){
+    .container{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .second-section{
+        width: auto;
+        height: auto;
+    }
+
+    .triangle{
+        display: none;
+    }
+
+    .bubble{
+        border-radius: 10px;
+        top: 163px;
+        left: 97px;
+    }
+
+    body {
+        background-image: url(/images/bg-mobile.png);
+        background-position: bottom;
+        background-size: cover;
+    }
  }
